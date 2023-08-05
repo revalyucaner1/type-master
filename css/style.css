@@ -1,0 +1,292 @@
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/barlow-v12-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/barlow-v12-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/barlow-v12-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/barlow-v12-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+
+
+
+:root {
+  /* colors */
+  --orange-color: #F16718;
+  --orange-color-light-color: #FF9B62;
+  --dark-blue-color: #162542;
+  --dark-blue-light-color:#7B8BAD;
+  --space-color:#E8EFF2;
+  --white-color: #FFFFFF;
+
+  --h1-fs: 5.6rem;
+  --h1-lh: 1;
+
+  --h2-fs: 3.2rem;
+  --h2-lh: 1.125;
+
+  --h3-fs: 2.4rem;
+  --h3-lh: 1.116;
+
+
+  --body-fs: 1.6rem;
+  --body-lh: 1.62;
+}
+
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+img{
+  display: flex;
+  object-fit: cover;
+}
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+
+body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Barlow", sans-serif;
+  font-size: var(--body-fs);
+  line-height: var( --body-lh);
+  color: var( --dark-blue-light-color);
+}
+
+h1, h2, h3{
+  font-weight: 900;
+  color: var(--dark-blue-light-color);
+}
+h1{
+  font-size: var(--h1-fs);
+  line-height: var(--h1-lh);
+}
+h2{
+  font-size: var(--h2-fs);
+  line-height: var(--h2-lh);
+}
+h3{
+  font-size: var(--h3-fs);
+  line-height: var(--h3-lh);
+}
+
+.header-top {
+  display: flex;
+  margin-top: 20px;
+}
+.img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+
+}
+.btn{
+  
+  padding: 16px 27px 16px 26px;
+  border-radius: 5px;
+  background-color: var(--space-color);
+  color: black;
+  margin-left: auto;
+  font-size: 1.6rem;
+ 
+}
+.btn:hover{
+  background-color: var(--dark-blue-color);
+  color: #FFFFFF;
+  font-size: 1.6rem;
+}
+
+.header-all{
+  display: flex;
+  margin-top: 83px;
+}
+
+.Keyboard{
+  width: 445px;
+  color: var(--dark-blue-color);
+  
+}
+.your{
+  width: 400px;
+  color: var(--dark-blue-light-color);
+  margin-bottom: 40px;
+}
+.btn1 {
+  padding: 16px 27px 16px 26px;
+  background-color: var(--orange-color);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border-radius: 5px;
+}
+.btn1:hover{
+  background-color: var(--orange-color-light-color);
+  color: #FFFFFF;
+}
+.btn2 {
+  padding: 16px 27px 16px 26px;
+  font-weight: 700;
+  color:black;
+  border-radius: 5px;
+}
+.rigth-images{
+  width: 540px;
+  height: 480px;
+  margin-left: 125px ;
+}
+.rigth-side{
+  display: flex;
+}
+.none{
+  display: none;
+  margin-left: auto;
+}
+.images-rigth{
+  width: 116px;
+  height: 240px;
+  margin-left: 40px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+@media screen and (max-width:768px){
+  .Keyboard{
+      width: 339px;
+  }
+  .your{
+      width: 339px;
+  }
+  .rigth-images{
+      display: none;
+  }
+  .none{
+      display: block;
+  }
+  .images-rigth{
+      display: none;
+  }
+}
+
+.main-top {
+  
+}
+.main-all {
+  display: flex;
+  margin-top: 30px;
+}
+.main-images {
+  margin-right: 30px;
+}
+.main-images2 {
+}
+.wireless {
+  width: 255px;
+  color: var(--dark-blue-color);
+  margin-bottom: 27px;
+}
+.boasts {
+  width: 255px;
+  color: var(--dark-blue-light-color);
+}
+
+.main-all-two{
+  margin-left: 125px;
+  margin-top: 135px;
+}
+@media screen and (max-width:768px){
+  .main-images{
+      width: 214px;
+      height: 320px;
+     
+  }
+  .main-images2{
+      width: 445px;
+      height: 320px;
+  }
+ 
+}
+
+.footer-top {
+  margin-top: 168px;
+  display: flex;
+  
+}
+.footer-all{
+  margin-left: 50px;
+}
+.Group8{
+  margin-bottom: 48px;
+}
+.highly {
+  width: 155px;
+  color: var(--dark-blue-color);
+  margin-bottom: 25px;
+
+}
+.Easy {
+  width: 235px;
+  color: var(--dark-blue-light-color);
+}
+.All{
+  margin-top: 128px;
+  text-align: center;
+}
